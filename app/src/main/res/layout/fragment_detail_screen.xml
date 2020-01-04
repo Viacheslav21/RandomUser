@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="45dp"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/detail_user_screen_image"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center" />
+
+        <TextView
+                android:id="@+id/user_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="User name" />
+
+        <TextView
+                android:id="@+id/user_detail_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                tools:text="agee" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_detail_phone_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                app:errorEnabled="false"
+                android:hint="@string/cell_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_detail_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/phone"
+                    android:focusable="false"
+                    android:cursorVisible="false"
+                    android:clickable="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/gender">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_detail_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/gender"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_detail_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/email"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/dob">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_detail_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/dob"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+
+                    android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>
