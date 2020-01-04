@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Random Users</string>
+    <string name="base_url">https://randomuser.me/</string>
+    <string name="age">%1$s years old</string>
+    <string name="cell_phone">Cell Phone</string>
+    <string name="gender">Gender</string>
+    <string name="email">Email</string>
+    <string name="dob">Date of birth</string>
+</resources>
